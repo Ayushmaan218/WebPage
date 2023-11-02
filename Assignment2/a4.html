@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       .con:hover{
-        p{
-            color: blue;
+        .a{
+            color: black;
+            transition: color 0.3s;
         }
+        .im:hover + .a{
+        color: aqua;
        }
     </style>
 </head>
-<body><div class="con">
-   <p> My Special Div</p>
-    <img src="/800px-The_Indian_Pariah_Dog copy.jpg" alt=""></div>
+<body>
+    <img src="/800px-The_Indian_Pariah_Dog copy.jpg" alt="" class="im">
+    <div class="a">My Special Div</div>
+   
 </body>
 </html>
