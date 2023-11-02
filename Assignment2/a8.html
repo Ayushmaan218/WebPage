@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div>
         <form action="">
             <label for=“emp”>Name</label><input type=“text”>
             <div class="dropdown">
-                <span>Mouse over me</span>
+                <span>sections</span>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
+                    <label for="country">section</label>
+                    <select name="country" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
                 </div>
+                <button type="button">submit</button>
             </div>
         </form>
         
