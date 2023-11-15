@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                let a =0;
+                $("p").each(function(){
+                    a++;
+                })
+                console.log(a);
+                alert(a)
+            })
+        </script>
+</head>
+<body>
+    <div id="selected">
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+</body>
+</html>
