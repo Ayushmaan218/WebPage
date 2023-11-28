@@ -10,7 +10,7 @@
   <title>Question-8</title>
   <script>
     $(document).ready(function(){
-      $("#applyFilter").click(function(){
+      $("#a").click(function(){
         var value = $("#categoryFilter").val().toLowerCase();
         $("#myTable tr").filter(function(){
           $(this).toggle($(this).find('td:nth-child(2)').text().toLowerCase().indexOf(value) > -1)
@@ -43,15 +43,15 @@
 
   <h2>JOB LISTINGS</h2>
   <div>
-    <label for="categoryFilter">Filter by Category:</label>
-    <select id="categoryFilter">
+    <label for="category">Filter by Category:</label>
+    <select id="category">
         <option value="Software">Software</option>
         <option value="Design">Design</option>
         <option value="Media">Media</option>
         <option value="Hotel & Travel">Hotel and Travel</option>
         <option value="Market">Market</option>
     </select>
-    <button id="applyFilter">Apply Filter</button>
+    <button id="a">Apply Filter</button>
   </div><br>
   <table id="myTable">
       <tr>
