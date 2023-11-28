@@ -11,7 +11,7 @@
   <script>
     $(document).ready(function(){
       $("#a").click(function(){
-        var value = $("#categoryFilter").val().toLowerCase();
+        var value = $("#category").val().toLowerCase();
         $("#myTable tr").filter(function(){
           $(this).toggle($(this).find('td:nth-child(2)').text().toLowerCase().indexOf(value) > -1)
         });
